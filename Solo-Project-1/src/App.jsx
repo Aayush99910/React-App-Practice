@@ -1,10 +1,20 @@
-import React from "react";
-import Info from "./components/Info";
+import React from "react"; // importing react
 
+//importing all the components
+import Info from "./components/Info";
+import About from "./components/About";
+import Interest from "./components/Interests";
+import Footer from "./components/Footer";
+
+// exporting the app component which returns the whole
+// app
 export default function App() {
   return (
-    <div className="photo-name-container">
+    <div>
       <Info />
+      <About />
+      <Interest />
+      <Footer />
     </div>
   )
 } 

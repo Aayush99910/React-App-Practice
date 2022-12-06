@@ -1,9 +1,9 @@
-import React from "react";
-import Profilepicture from '../assets/Me1.jpg';
+import React from "react"; // importing react
 
+// exporting info component
 export default function Info() {
   return (
-    <div>
+    <div className="photo-name-container">
       <div className="profile-picture"></div>
       <p className="username">Aayush Maharjan</p>
       <small className="occupation">Full Stack Web developer</small>
