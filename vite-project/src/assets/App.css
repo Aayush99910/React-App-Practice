@@ -17,9 +17,41 @@
   font-size: 25px;
 }
 
-.project-number  > p{
+.project-number  > p {
   color: #DEEBF8;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 18px;
+}
+
+.main-body-content-container {
+  background-color: #282D35;
+  height: 85vh;
+  padding-top: 40px;
+  padding-left: 45px;
+  background-image: url(./react-icon-large.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.facts-title {
+  margin: 0;
+  color: #FFFFFF;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 50px;
+  letter-spacing: -0.05em;
+}
+
+.facts-points > li {
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.facts-points > li::marker {
+  font-size: 1.8rem;
+  color: #61DAFB;
 }
