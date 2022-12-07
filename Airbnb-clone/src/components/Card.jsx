@@ -1,21 +1,26 @@
 import React from "react";
-import ProfilePicture from "../assets/katie-zaferes.png";
-import starLogo from "../assets/star.png";
+import starLogo from "../assets/images/star.png"
 
-export default function Card() {
+export default function Card(props) {
+  let badgeText;
+  if (props.data.openSpots === 0) {
+    badgeText = "Sold Out"
+  } else if (props.data.location === "Online") {
+    badgeText = "Online"
+  }
   return(
     <div className="card">
       <div className="profile-picture-container">
-        <img src={ProfilePicture}/>
-        <p className="availability">Sold out</p>
+        <img src={`/src/assets/images/${props.data.coverImg}`}/>
+        {badgeText && <p className="availability">{badgeText}</p>}
       </div>
       <div className="profile-description">
         <p className="rating">
-          <img src={starLogo} />
-          5.0 <span className="dot">&nbsp;(6)&#183;USA</span>
+          <img src={starLogo}/>
+          {props.data.stats.rating}<span className="dot">&nbsp;({props.data.stats.reviewCount})•{props.data.location}</span>
         </p>
-        <p className="type">Life lessons with Katie Zaferes</p>
-        <p className="price"><span className="starting-price">From $136 </span>/ person</p>
+        <p className="type">{props.data.title}</p>
+        <p className="price"><span className="starting-price">From ${props.data.price}</span>/ person</p>
       </div>
     </div>
   )

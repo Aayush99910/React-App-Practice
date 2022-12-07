@@ -1,5 +1,5 @@
 import React from "react";
-import Photo from "../assets/photo-grid.png"
+import Photo from "../assets/images/photo-grid.png";
 
 
 export default function PhotoGrid() {
