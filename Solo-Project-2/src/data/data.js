@@ -2,7 +2,7 @@ export default [
   { 
       id: 1,
       title: "Phewa Lake",
-      location: "Nepal",
+      location: "NEPAL",
       googleMapsUrl: "https://www.google.com/maps/place/Phewa+Lake/@28.2116974,83.9086055,13z/data=!3m1!4b1!4m5!3m4!1s0x39959520918498bb:0xfca6adfa336fd6c7!8m2!3d28.2153837!4d83.9453168",
       startDate: "01 Feb, 2021",
       endDate: "24 March, 2029",
@@ -12,7 +12,7 @@ export default [
   {
     id: 2,
     title: "Chitwan National Park",
-    location: "Nepal",
+    location: "NEPAL",
     googleMapsUrl: "https://www.google.com/maps/place/Chitwan+National+Park/@27.5341069,84.4498917,17z/data=!3m1!4b1!4m5!3m4!1s0x3994b0337772df43:0xafa1603d5d63a217!8m2!3d27.5341022!4d84.4524666",
     startDate: "05 Jul, 2022",
     endDate: "05 Aug, 2025",
@@ -22,7 +22,7 @@ export default [
   {
     id: 3,
     title: "Mount Fuji",
-    location: "Japan",
+    location: "JAPAN",
     googleMapsUrl: "https://www.google.com/maps/place/Mount+Fuji/@35.3606583,138.7067637,14z/data=!3m1!4b1!4m5!3m4!1s0x6019629a42fdc899:0xa6a1fcc916f3a4df!8m2!3d35.3606255!4d138.7273634",
     startDate: "12 Jan, 2021",
     endDate: "24 Jan, 2021",
@@ -32,7 +32,7 @@ export default [
   {
     id: 4,
     title: "Sydney Opera House",
-    location: "Australia",
+    location: "AUSTRALIA",
     googleMapsUrl: "https://www.google.com/maps/place/Sydney+Opera+House/@-33.8567799,151.2127218,17z/data=!3m2!4b1!5s0x6b12ae67d234a27f:0xd6d4e9380ca1e32f!4m5!3m4!1s0x6b12ae665e892fdd:0x3133f8d75a1ac251!8m2!3d-33.8567844!4d151.2152967",
     startDate: "27 May, 2021",
     endDate: "8 Jun, 2021",
@@ -42,7 +42,7 @@ export default [
   {
     id: 5,
     title: "GosaiKunda",
-    location: "Nepal",
+    location: "NEPAL",
     googleMapsUrl: "https://www.google.com/maps/place/Gosainkunda/@28.0823008,85.4084177,16z/data=!3m1!4b1!4m5!3m4!1s0x39eaefb4ce7a5a77:0x169c2756b8837dea!8m2!3d28.0820059!4d85.414986",
     startDate: "05 Sep, 2022",
     endDate: "25 Dec, 2022",
@@ -52,7 +52,7 @@ export default [
   {
     id: 6,
     title: "Taj Mahal",
-    location: "India",
+    location: "INDIA",
     googleMapsUrl: "https://www.google.com/maps/place/Taj+Mahal/@27.1751448,78.0421422,17z/data=!3m1!4b1!4m5!3m4!1s0x39747121d702ff6d:0xdd2ae4803f767dde!8m2!3d27.1751448!4d78.0421422",
     startDate: "05 March, 2022",
     endDate: "25 Jul, 2022",
