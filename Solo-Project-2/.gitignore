@@ -11,6 +11,8 @@ node_modules
 dist
 dist-ssr
 *.local
+babel.config.js
+babel-plugin-macros.config.js
 
 # Editor directories and files
 .vscode/*
