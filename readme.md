@@ -4,4 +4,6 @@ vite-project LIVE --> https://steady-malasada-e3e486.netlify.app/
 
 Solo-Project-1 LIVE --> https://fantastic-crumble-0fe656.netlify.app/
 
-Solo-Project-2 LIVE --> https://silver-baklava-b9d50a.netlify.app/
+Airbnb-clone LIVE --> https://dynamic-kangaroo-70c2f4.netlify.app/
+
+Solo-Project-2 LIVE --> https://soft-mousse-ccbd40.netlify.app/
