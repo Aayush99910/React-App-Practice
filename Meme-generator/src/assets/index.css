@@ -60,9 +60,22 @@ form {
   justify-content: space-between;
 }
 
-input {
+input[type=text] {
   height: 35px;
   width: 48%;
+  padding: 10px;
+  font-family: 'Karla', sans-serif;
+  color: #0D0D0D;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  border: 1px solid gray;
+}
+
+input[type=text]:focus {
+  outline: 1px solid rgb(33, 154, 206);
+  border: none;
 }
 
 .button-container {
@@ -80,5 +93,22 @@ button {
   font-family: 'Karla', sans-serif;
   font-weight: bold;
   font-size: 18px;
-  background-image:  linear-gradient(to right, #672280, #A626D3);
+  background-image: linear-gradient(to right, #672280, #A626D3);
+}
+
+button:hover {
+  cursor: pointer;
+  background-image: linear-gradient(to right, #A626D3, #672280);
+}
+
+.meme-image-container {
+  width: 350px;
+  height: 350px;
+  margin: auto;
+  object-fit: fill;
+}
+
+.meme-image-container > img {
+  width: 100%;
+  height: 100%;
 }
