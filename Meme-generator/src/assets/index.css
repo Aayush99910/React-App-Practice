@@ -105,7 +105,26 @@ button:hover {
   width: 350px;
   height: 350px;
   margin: auto;
+  position: relative;
   object-fit: fill;
+}
+
+.meme-text {
+  position: absolute;
+  font-family: 'Inter', sans-serif;
+  color: white;
+  font-size: 30px;
+  left: 50%;
+  white-space: nowrap;
+  transform: translateX(-50%);
+}
+
+.top {
+  top: 10px;
+}
+
+.bottom {
+  bottom: 10px;
 }
 
 .meme-image-container > img {
