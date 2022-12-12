@@ -3,8 +3,6 @@
 :root{
   --border-color: #0B2434;
   --game-background-color: #F5F5F5;
-  --selected-grid-color: #59E391;
-  --normal-grid-color: white;
   --roll-btn-color: #5035FF;
 }
 
@@ -33,6 +31,24 @@ main {
   align-items: center;
 }
 
+.title {
+  font-size: 50px;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: #2B283A;
+}
+
+.instructions {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: #4A4E74;
+  margin-top: 5px; 
+  margin-bottom: 35px;
+  font-size: 20px;
+  width: 340px;
+  text-align: center;
+}
+
 .dice-container{
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -45,14 +61,13 @@ main {
 }
 
 .grid-item {
-  background-color: var(--normal-grid-color);
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
   height: 60px;
   width: 60px;
-  border-radius: 6px;
+  border-radius: 10px;
   margin: auto;
   font-family: 'Karla', sans-serif;
   font-weight: bold;
@@ -61,9 +76,6 @@ main {
   cursor: pointer;
 }
 
-.selected-grid {
-  background-color: var(--selected-grid-color);
-}
 
 .roll-btn {
   padding: 10px 40px;
