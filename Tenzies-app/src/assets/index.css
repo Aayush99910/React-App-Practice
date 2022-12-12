@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Karla:wght@400;700&display=swap');
+
+:root{
+  --border-color: #0B2434;
+  --game-background-color: #F5F5F5;
+  --selected-grid-color: #59E391;
+  --normal-grid-color: white;
+  --roll-btn-color: #5035FF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--border-color);
+  padding: 35px 0px;
+}
+
+main {
+  background-color: var(--game-background-color);
+  width: 90%;
+  height: 90vh;
+  margin: auto;
+  max-width: 900px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dice-container{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  width: 65%;
+  min-width: 400px;
+  row-gap: 20px;
+  column-gap: 0px;
+  margin-bottom: 30px;
+}
+
+.grid-item {
+  background-color: var(--normal-grid-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  height: 60px;
+  width: 60px;
+  border-radius: 6px;
+  margin: auto;
+  font-family: 'Karla', sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.selected-grid {
+  background-color: var(--selected-grid-color);
+}
+
+.roll-btn {
+  padding: 10px 40px;
+  border: none;
+  background-color: var(--roll-btn-color);
+  color: white;
+  font-family: 'Karla', sans-serif;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: 0.15s;
+  cursor: pointer;
+}
+
+.roll-btn:hover{
+  outline: none;
+}
+
+.roll-btn:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);;
+}
