@@ -31,20 +31,35 @@ main {
   align-items: center;
 }
 
+.title-container {
+  font-family: 'Inter', sans-serif;
+  color: #2B283A;
+}
+
 .title {
   font-size: 50px;
   margin: 0;
-  font-family: 'Inter', sans-serif;
-  color: #2B283A;
+}
+
+.high-score {
+  text-align: center;
+  margin-top: 5px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.rounds {
+  text-align: center;
+  font-weight: bold;
 }
 
 .instructions {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   color: #4A4E74;
-  margin-top: 5px; 
+  margin-top: 15px; 
   margin-bottom: 35px;
-  font-size: 20px;
+  font-size: 17px;
   width: 340px;
   text-align: center;
 }
