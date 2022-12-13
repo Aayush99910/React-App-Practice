@@ -25,26 +25,6 @@ export default function App() {
       setDice(allNewDice());
       setTenzies(false);
       setRounds(0);
-      
-      let lowScoreFromLocalStorage = JSON.parse(localStorage.getItem("lowScore"));
-
-      
-      if (typeof lowScoreFromLocalStorage === "number") {
-        if (lowScoreFromLocalStorage === 0) {
-          localStorage.setItem("lowScore", rounds);
-          setLowScore(rounds);
-        }else if (lowScoreFromLocalStorage > rounds){
-          localStorage.setItem("lowScore", rounds);
-          setLowScore(rounds);
-        } else if (lowScoreFromLocalStorage , rounds) {
-          // pass
-        }
-      } else {
-        localStorage.setItem("lowScore", rounds);
-        setLowScore(rounds);
-      } 
-      
-
     } else {
       setDice(oldDice => 
         oldDice.map(dice => { 
@@ -88,6 +68,31 @@ export default function App() {
   }, [dice])
 
 
+  useEffect(() => {
+    let lowScoreFromLocalStorage = JSON.parse(localStorage.getItem("lowScore"));
+
+    if (!tenzies) {
+      return 
+    }
+
+
+    if (typeof lowScoreFromLocalStorage === "number") {
+      if (lowScoreFromLocalStorage === 0) {
+        localStorage.setItem("lowScore", rounds);
+        setLowScore(rounds);
+      }else if (lowScoreFromLocalStorage > rounds){
+        localStorage.setItem("lowScore", rounds);
+        setLowScore(rounds);
+      } else if (lowScoreFromLocalStorage , rounds) {
+        // pass
+      }
+    } else {
+      localStorage.setItem("lowScore", rounds);
+      setLowScore(rounds);
+    } 
+  }, [tenzies]) 
+
+
   const diceElements = dice.map((die, index) => {
     return (
       <Die
@@ -105,7 +110,7 @@ export default function App() {
       {tenzies && <Confetti />}
       <div className="title-container">
         <h1 className="title">Tenzies</h1>
-        <p className="high-score">Low Score: {lowScore}</p>
+        <p className="high-score">Lowest Score: {lowScore}</p>
         <p className="rounds">Number of rounds: {rounds}</p>
       </div>
       <p className="instructions">
